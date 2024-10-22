@@ -17,7 +17,6 @@ public class Dictionary {
 
     // Метод для пошуку перекладу
     public String translate(String original) {
-        // Звичайний цикл для пошуку слова
         for (int i = 0; i < words.size(); i++) {
             Word word = words.get(i);
             if (word.getOriginal().equals(original)) {
@@ -29,7 +28,6 @@ public class Dictionary {
 
     // Метод для виводу всіх слів у словнику
     public void printAllWords() {
-        // Звичайний цикл для виводу слів
         for (int i = 0; i < words.size(); i++) {
             System.out.println(words.get(i));
         }
